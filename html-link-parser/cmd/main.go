@@ -8,12 +8,12 @@ import (
 
 func main() {
 	// fmt.Println("hello")
-	file, err := os.Open("index.html")
+	file, err := os.Open("index2.html")
 	if err != nil {
 		panic(err)
 	}
 
-	tags := htmllinkparser.ParseHTML(file)
+	tags, _ := htmllinkparser.ParseHTML2(file)
 
 	for _, v := range tags {
 		fmt.Printf("%v -------------- %v\n", v.Href, v.Text)
