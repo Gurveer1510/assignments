@@ -24,7 +24,7 @@ type urlSet struct {
 }
 
 func main() {
-	requestedURL := flag.String("url", "https://gophercises.com", "The URL for you which you want to generate the site builder")
+	requestedURL := flag.String("url", "https://www.sitemaps.org", "The URL for you which you want to generate the site builder")
 	maxDepth := flag.Int("depth", 10, "The max depth you wanna go to find links.")
 	flag.Parse()
 
